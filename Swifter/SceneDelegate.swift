@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  Diary Swift
+//  Swifter
 //
-//  Created by Artem Sulzhenko on 16.03.2023.
+//  Created by Artem Sulzhenko on 19.03.2023.
 //
 
 import UIKit
