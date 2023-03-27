@@ -31,7 +31,6 @@ class CollectionViewCell: UICollectionViewCell {
         test.text = "test"
         test.textColor = .black
         test.font = UIFont(name: "DisketMono-Bold", size: 12)
-//        test.font = test.font.withSize(15)
 
         view.layer.cornerRadius = 8
 

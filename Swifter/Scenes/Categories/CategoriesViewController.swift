@@ -18,10 +18,10 @@ class CategoriesViewController: UIViewController {
         return collectionView
     }()
 
-//    let categories = ["Swift", "Алгоритмы", "Фреймворки", "Сеть",
-//                      "Хранение данных", "Многопоточность", "Библиотеки",
-//                      "Архитектура", "Тестирование", "Инструменты",
-//                      "Безопасность", "Дизайн"]
+    //    let categories = ["Swift", "Алгоритмы", "Фреймворки", "Сеть",
+    //                      "Хранение данных", "Многопоточность", "Библиотеки",
+    //                      "Архитектура", "Тестирование", "Инструменты",
+    //                      "Безопасность", "Дизайн"]
 
     let categories = [
         Category(name: "Swift", icon: "swift", color: "postelOne"),
@@ -49,11 +49,16 @@ class CategoriesViewController: UIViewController {
         setupCollectionView()
 
         let search = UISearchController(searchResultsController: nil)
-        //        let searchBar = UISearchBar()
-        //        search.delegate = self
-        //        search.searchBar.delegate = self
         navigationController?.navigationBar.prefersLargeTitles = true
-
+        search.searchBar.searchTextField.layer.cornerRadius = 8
+        search.searchBar.searchTextField.layer.borderColor = UIColor.black.cgColor
+        search.searchBar.searchTextField.layer.borderWidth = 1
+        search.searchBar.searchTextField.backgroundColor = .white
+        search.searchBar.placeholder = "Поиск"
+        search.searchBar.setValue("Отмена", forKey: "cancelButtonText")
+        let cancelButtonAttributes = [NSAttributedString.Key.foregroundColor: UIColor.red]
+        UIBarButtonItem.appearance(whenContainedInInstancesOf: [UISearchBar.self])
+            .setTitleTextAttributes(cancelButtonAttributes, for: .normal)
         navigationItem.title = "Категории"
 
         navigationItem.searchController = search
