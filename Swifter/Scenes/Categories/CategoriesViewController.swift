@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class CategoriesViewController: UIViewController {
 
@@ -17,11 +18,6 @@ class CategoriesViewController: UIViewController {
         collectionView.backgroundColor = UIColor(named: "elephant")
         return collectionView
     }()
-
-    //    let categories = ["Swift", "Алгоритмы", "Фреймворки", "Сеть",
-    //                      "Хранение данных", "Многопоточность", "Библиотеки",
-    //                      "Архитектура", "Тестирование", "Инструменты",
-    //                      "Безопасность", "Дизайн"]
 
     let categories = [
         Category(name: "Swift", icon: "swift", color: "postelOne"),
@@ -38,6 +34,8 @@ class CategoriesViewController: UIViewController {
         Category(name: "Дизайн", icon: "design", color: "postelTwelve")
     ]
 
+    let test = UISearchBar()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.register(CollectionViewCell.self,
@@ -50,19 +48,50 @@ class CategoriesViewController: UIViewController {
 
         let search = UISearchController(searchResultsController: nil)
         navigationController?.navigationBar.prefersLargeTitles = true
-        search.searchBar.searchTextField.layer.cornerRadius = 8
-        search.searchBar.searchTextField.layer.borderColor = UIColor.black.cgColor
-        search.searchBar.searchTextField.layer.borderWidth = 1
-        search.searchBar.searchTextField.backgroundColor = .white
+        search.searchBar.searchTextField.backgroundColor = UIColor(named: "lightGray")
         search.searchBar.placeholder = "Поиск"
+
+        navigationItem.hidesSearchBarWhenScrolling = false
+        search.hidesNavigationBarDuringPresentation = false
+
+        let tesi = UIView()
+        tesi.backgroundColor = .none
+        tesi.layer.borderColor = UIColor.black.cgColor
+        tesi.layer.borderWidth = 1
+        tesi.layer.cornerRadius = 8
+        tesi.backgroundColor = .white
+
+        let resd = UIView()
+        resd.layer.cornerRadius = 7
+        resd.backgroundColor = UIColor(named: "lightGray")
+
+        search.searchBar.insertSubview(tesi, at: 0)
+        search.searchBar.insertSubview(resd, at: 1)
+
+        tesi.snp.makeConstraints { maker in
+            maker.centerX.centerY.equalTo(search.searchBar.searchTextField)
+            maker.width.height.equalTo(search.searchBar.searchTextField).offset(10)
+        }
+
+        resd.snp.makeConstraints { maker in
+            maker.top.left.right.bottom.equalTo(tesi).inset(5)
+        }
+
         search.searchBar.setValue("Отмена", forKey: "cancelButtonText")
-        let cancelButtonAttributes = [NSAttributedString.Key.foregroundColor: UIColor.red]
+        let cancelButtonAttributes = [
+            NSAttributedString.Key.foregroundColor: UIColor.red,
+            NSAttributedString.Key.font: UIFont(name: "DisketMono-Bold", size: 14)
+        ]
         UIBarButtonItem.appearance(whenContainedInInstancesOf: [UISearchBar.self])
-            .setTitleTextAttributes(cancelButtonAttributes, for: .normal)
+            .setTitleTextAttributes(cancelButtonAttributes as [NSAttributedString.Key: Any], for: .normal)
+
         navigationItem.title = "Категории"
 
         navigationItem.searchController = search
 
+        navigationController?.navigationBar.largeTitleTextAttributes = [
+            NSAttributedString.Key.font: UIFont(name: "DisketMono-Bold", size: 30) as Any
+        ]
         for family in UIFont.familyNames.sorted() {
             let names = UIFont.fontNames(forFamilyName: family)
             print("Family: \(family) Font names: \(names)")
