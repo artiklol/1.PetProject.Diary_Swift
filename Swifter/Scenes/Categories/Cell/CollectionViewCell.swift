@@ -29,7 +29,7 @@ class CollectionViewCell: UICollectionViewCell {
         contentView.layer.borderWidth = 1
 
         test.text = "test"
-        test.textColor = .black
+        test.textColor = UIColor(named: "blackWhite")
         test.font = UIFont(name: "DisketMono-Bold", size: 12)
 
         view.layer.cornerRadius = 8

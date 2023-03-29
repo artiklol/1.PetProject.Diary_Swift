@@ -23,7 +23,7 @@ class CategoriesViewController: UIViewController {
         Category(name: "Swift", icon: "swift", color: "postelOne"),
         Category(name: "Алгоритмы", icon: "algorithm", color: "postelTwo"),
         Category(name: "Фреймворки", icon: "framework", color: "postelThree"),
-        Category(name: "Хранение данных", icon: "database", color: "postelFive"),
+        Category(name: "Хранение данных", icon: "database", color: "lightGray"),
         Category(name: "Сеть", icon: "network", color: "postelFour"),
         Category(name: "Многопоточность", icon: "multithreading", color: "postelSix"),
         Category(name: "Библиотеки", icon: "libraries", color: "postelSeven"),
@@ -38,6 +38,8 @@ class CategoriesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        overrideUserInterfaceStyle = .light
+
         collectionView.register(CollectionViewCell.self,
                                 forCellWithReuseIdentifier: CollectionViewCell.identifier)
 
@@ -48,7 +50,7 @@ class CategoriesViewController: UIViewController {
 
         let search = UISearchController(searchResultsController: nil)
         navigationController?.navigationBar.prefersLargeTitles = true
-        search.searchBar.searchTextField.backgroundColor = UIColor(named: "lightGray")
+        search.searchBar.searchTextField.backgroundColor = .none
         search.searchBar.placeholder = "Поиск"
 
         navigationItem.hidesSearchBarWhenScrolling = false
@@ -63,7 +65,7 @@ class CategoriesViewController: UIViewController {
 
         let resd = UIView()
         resd.layer.cornerRadius = 7
-        resd.backgroundColor = UIColor(named: "lightGray")
+        resd.backgroundColor = UIColor(named: "postelFive")
 
         search.searchBar.insertSubview(tesi, at: 0)
         search.searchBar.insertSubview(resd, at: 1)
