@@ -7,22 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		068D7A0729E028C40065CEC9 /* CategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068D7A0629E028C40065CEC9 /* CategoriesViewModel.swift */; };
+		068D7A0B29E03CD70065CEC9 /* CategoriesCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068D7A0A29E03CD60065CEC9 /* CategoriesCellViewModel.swift */; };
+		068D7A1029E045AF0065CEC9 /* Disket-Mono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 068D7A0E29E045AF0065CEC9 /* Disket-Mono-Regular.ttf */; };
+		068D7A1129E045AF0065CEC9 /* Disket-Mono-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 068D7A0F29E045AF0065CEC9 /* Disket-Mono-Bold.ttf */; };
 		06B9B04329CC6FBA00969C3C /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B9B04229CC6FBA00969C3C /* Category.swift */; };
-		06B9B04B29CC89A900969C3C /* Disket-Mono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06B9B04929CC89A900969C3C /* Disket-Mono-Regular.ttf */; };
-		06B9B04C29CC89A900969C3C /* Disket-Mono-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06B9B04A29CC89A900969C3C /* Disket-Mono-Bold.ttf */; };
 		06CDC99929C758C300DA3E3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CDC99829C758C300DA3E3A /* AppDelegate.swift */; };
 		06CDC99B29C758C300DA3E3A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CDC99A29C758C300DA3E3A /* SceneDelegate.swift */; };
 		06CDC99D29C758C300DA3E3A /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CDC99C29C758C300DA3E3A /* CategoriesViewController.swift */; };
 		06CDC9A229C758C900DA3E3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06CDC9A129C758C900DA3E3A /* Assets.xcassets */; };
 		06CDC9A529C758C900DA3E3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06CDC9A329C758C900DA3E3A /* LaunchScreen.storyboard */; };
-		06CDC9AD29C75A8900DA3E3A /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CDC9AC29C75A8900DA3E3A /* CollectionViewCell.swift */; };
+		06CDC9AD29C75A8900DA3E3A /* CategoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CDC9AC29C75A8900DA3E3A /* CategoriesCollectionViewCell.swift */; };
 		C56E4D1B1031AC8BC699667E /* Pods_Swifter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6AA999BFB13CAE2A4CD1B4 /* Pods_Swifter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		068D7A0629E028C40065CEC9 /* CategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewModel.swift; sourceTree = "<group>"; };
+		068D7A0A29E03CD60065CEC9 /* CategoriesCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCellViewModel.swift; sourceTree = "<group>"; };
+		068D7A0E29E045AF0065CEC9 /* Disket-Mono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Disket-Mono-Regular.ttf"; path = "../../../../../../../.Trash/Disket Mono 12.16.10/Disket-Mono-Regular.ttf"; sourceTree = "<group>"; };
+		068D7A0F29E045AF0065CEC9 /* Disket-Mono-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Disket-Mono-Bold.ttf"; path = "../../../../../../../.Trash/Disket Mono 12.16.10/Disket-Mono-Bold.ttf"; sourceTree = "<group>"; };
 		06B9B04229CC6FBA00969C3C /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
-		06B9B04929CC89A900969C3C /* Disket-Mono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Disket-Mono-Regular.ttf"; path = "../../../../../Disket Mono/Disket-Mono-Regular.ttf"; sourceTree = "<group>"; };
-		06B9B04A29CC89A900969C3C /* Disket-Mono-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Disket-Mono-Bold.ttf"; path = "../../../../../Disket Mono/Disket-Mono-Bold.ttf"; sourceTree = "<group>"; };
 		06CDC99529C758C300DA3E3A /* Swifter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swifter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06CDC99829C758C300DA3E3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06CDC99A29C758C300DA3E3A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,7 +34,7 @@
 		06CDC9A129C758C900DA3E3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06CDC9A429C758C900DA3E3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06CDC9A629C758C900DA3E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		06CDC9AC29C75A8900DA3E3A /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		06CDC9AC29C75A8900DA3E3A /* CategoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCollectionViewCell.swift; sourceTree = "<group>"; };
 		0A6AA999BFB13CAE2A4CD1B4 /* Pods_Swifter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swifter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81597787A7FED2F320E337EA /* Pods-Swifter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swifter.debug.xcconfig"; path = "Target Support Files/Pods-Swifter/Pods-Swifter.debug.xcconfig"; sourceTree = "<group>"; };
 		E1C8C7C1B570A498919D09FD /* Pods-Swifter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swifter.release.xcconfig"; path = "Target Support Files/Pods-Swifter/Pods-Swifter.release.xcconfig"; sourceTree = "<group>"; };
@@ -59,18 +63,40 @@
 		068048FD29CA0A83009F60BD /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				068048FE29CA0ACB009F60BD /* Cell */,
+				068048FE29CA0ACB009F60BD /* CategoriesCell */,
 				06CDC99C29C758C300DA3E3A /* CategoriesViewController.swift */,
+				068D7A0629E028C40065CEC9 /* CategoriesViewModel.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
 		};
-		068048FE29CA0ACB009F60BD /* Cell */ = {
+		068048FE29CA0ACB009F60BD /* CategoriesCell */ = {
 			isa = PBXGroup;
 			children = (
-				06CDC9AC29C75A8900DA3E3A /* CollectionViewCell.swift */,
+				06CDC9AC29C75A8900DA3E3A /* CategoriesCollectionViewCell.swift */,
+				068D7A0A29E03CD60065CEC9 /* CategoriesCellViewModel.swift */,
 			);
-			path = Cell;
+			path = CategoriesCell;
+			sourceTree = "<group>";
+		};
+		068D7A0C29E045340065CEC9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				06CDC99829C758C300DA3E3A /* AppDelegate.swift */,
+				06CDC99A29C758C300DA3E3A /* SceneDelegate.swift */,
+				06CDC9A629C758C900DA3E3A /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		068D7A0D29E0457D0065CEC9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				06CDC9A329C758C900DA3E3A /* LaunchScreen.storyboard */,
+				06CDC9A129C758C900DA3E3A /* Assets.xcassets */,
+				06B9B04429CC86DF00969C3C /* Fonts */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		06B9B04129CC6F8300969C3C /* Model */ = {
@@ -84,8 +110,8 @@
 		06B9B04429CC86DF00969C3C /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				06B9B04A29CC89A900969C3C /* Disket-Mono-Bold.ttf */,
-				06B9B04929CC89A900969C3C /* Disket-Mono-Regular.ttf */,
+				068D7A0F29E045AF0065CEC9 /* Disket-Mono-Bold.ttf */,
+				068D7A0E29E045AF0065CEC9 /* Disket-Mono-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -113,12 +139,8 @@
 			children = (
 				068048FA29C8AE97009F60BD /* Scenes */,
 				06B9B04129CC6F8300969C3C /* Model */,
-				06CDC99829C758C300DA3E3A /* AppDelegate.swift */,
-				06CDC99A29C758C300DA3E3A /* SceneDelegate.swift */,
-				06CDC9A129C758C900DA3E3A /* Assets.xcassets */,
-				06B9B04429CC86DF00969C3C /* Fonts */,
-				06CDC9A329C758C900DA3E3A /* LaunchScreen.storyboard */,
-				06CDC9A629C758C900DA3E3A /* Info.plist */,
+				068D7A0C29E045340065CEC9 /* Supporting Files */,
+				068D7A0D29E0457D0065CEC9 /* Resources */,
 			);
 			path = Swifter;
 			sourceTree = "<group>";
@@ -201,9 +223,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06B9B04C29CC89A900969C3C /* Disket-Mono-Bold.ttf in Resources */,
+				068D7A1129E045AF0065CEC9 /* Disket-Mono-Bold.ttf in Resources */,
+				068D7A1029E045AF0065CEC9 /* Disket-Mono-Regular.ttf in Resources */,
 				06CDC9A529C758C900DA3E3A /* LaunchScreen.storyboard in Resources */,
-				06B9B04B29CC89A900969C3C /* Disket-Mono-Regular.ttf in Resources */,
 				06CDC9A229C758C900DA3E3A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,8 +301,10 @@
 				06CDC99D29C758C300DA3E3A /* CategoriesViewController.swift in Sources */,
 				06B9B04329CC6FBA00969C3C /* Category.swift in Sources */,
 				06CDC99929C758C300DA3E3A /* AppDelegate.swift in Sources */,
-				06CDC9AD29C75A8900DA3E3A /* CollectionViewCell.swift in Sources */,
+				06CDC9AD29C75A8900DA3E3A /* CategoriesCollectionViewCell.swift in Sources */,
+				068D7A0729E028C40065CEC9 /* CategoriesViewModel.swift in Sources */,
 				06CDC99B29C758C300DA3E3A /* SceneDelegate.swift in Sources */,
+				068D7A0B29E03CD70065CEC9 /* CategoriesCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,7 +446,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T5K8V44L2C;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Swifter/Info.plist;
+				INFOPLIST_FILE = "Swifter/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -450,7 +474,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T5K8V44L2C;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Swifter/Info.plist;
+				INFOPLIST_FILE = "Swifter/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
