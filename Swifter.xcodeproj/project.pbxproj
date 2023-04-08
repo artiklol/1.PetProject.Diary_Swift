@@ -11,6 +11,7 @@
 		068D7A0B29E03CD70065CEC9 /* CategoriesCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068D7A0A29E03CD60065CEC9 /* CategoriesCellViewModel.swift */; };
 		068D7A1029E045AF0065CEC9 /* Disket-Mono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 068D7A0E29E045AF0065CEC9 /* Disket-Mono-Regular.ttf */; };
 		068D7A1129E045AF0065CEC9 /* Disket-Mono-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 068D7A0F29E045AF0065CEC9 /* Disket-Mono-Bold.ttf */; };
+		068D7A1429E1E12F0065CEC9 /* CategoryDetailListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068D7A1329E1E12F0065CEC9 /* CategoryDetailListViewController.swift */; };
 		06B9B04329CC6FBA00969C3C /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B9B04229CC6FBA00969C3C /* Category.swift */; };
 		06CDC99929C758C300DA3E3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CDC99829C758C300DA3E3A /* AppDelegate.swift */; };
 		06CDC99B29C758C300DA3E3A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CDC99A29C758C300DA3E3A /* SceneDelegate.swift */; };
@@ -26,6 +27,7 @@
 		068D7A0A29E03CD60065CEC9 /* CategoriesCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCellViewModel.swift; sourceTree = "<group>"; };
 		068D7A0E29E045AF0065CEC9 /* Disket-Mono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Disket-Mono-Regular.ttf"; path = "../../../../../../../.Trash/Disket Mono 12.16.10/Disket-Mono-Regular.ttf"; sourceTree = "<group>"; };
 		068D7A0F29E045AF0065CEC9 /* Disket-Mono-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Disket-Mono-Bold.ttf"; path = "../../../../../../../.Trash/Disket Mono 12.16.10/Disket-Mono-Bold.ttf"; sourceTree = "<group>"; };
+		068D7A1329E1E12F0065CEC9 /* CategoryDetailListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailListViewController.swift; sourceTree = "<group>"; };
 		06B9B04229CC6FBA00969C3C /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		06CDC99529C758C300DA3E3A /* Swifter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swifter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06CDC99829C758C300DA3E3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				068048FD29CA0A83009F60BD /* Categories */,
+				068D7A1229E1E0DE0065CEC9 /* CategoryDetailList */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -97,6 +100,14 @@
 				06B9B04429CC86DF00969C3C /* Fonts */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		068D7A1229E1E0DE0065CEC9 /* CategoryDetailList */ = {
+			isa = PBXGroup;
+			children = (
+				068D7A1329E1E12F0065CEC9 /* CategoryDetailListViewController.swift */,
+			);
+			path = CategoryDetailList;
 			sourceTree = "<group>";
 		};
 		06B9B04129CC6F8300969C3C /* Model */ = {
@@ -303,6 +314,7 @@
 				06CDC99929C758C300DA3E3A /* AppDelegate.swift in Sources */,
 				06CDC9AD29C75A8900DA3E3A /* CategoriesCollectionViewCell.swift in Sources */,
 				068D7A0729E028C40065CEC9 /* CategoriesViewModel.swift in Sources */,
+				068D7A1429E1E12F0065CEC9 /* CategoryDetailListViewController.swift in Sources */,
 				06CDC99B29C758C300DA3E3A /* SceneDelegate.swift in Sources */,
 				068D7A0B29E03CD70065CEC9 /* CategoriesCellViewModel.swift in Sources */,
 			);

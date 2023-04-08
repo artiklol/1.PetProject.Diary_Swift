@@ -112,7 +112,10 @@ extension CategoriesViewController: UICollectionViewDataSource {
 }
 
 extension CategoriesViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        navigationController?.pushViewController(CategoryDetailListViewController(), animated: true)
 
+    }
 }
 
 extension CategoriesViewController: UICollectionViewDelegateFlowLayout {
